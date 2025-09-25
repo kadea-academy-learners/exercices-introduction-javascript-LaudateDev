@@ -1,7 +1,14 @@
 // Exercice 7
 // Écrivez votre code ici
 let ageEnfant = 8;
-let agePère = ageEnfant * 2;
-let ageMère = agePère - 5;
-let ageGrandPère = ageMère * 2 + ageEnfant / 2;
-let ageOncle = agePère + 10;
+let agePere = ageEnfant * 2;
+let ageMere = agePere - 5;
+let ageGrandPere = ageMere * 2 + ageEnfant / 2;
+let ageOncle = agePere + 10;
+module.exports = {
+  ageEnfant,
+  agePere,
+  ageMere,
+  ageGrandPere,
+  ageOncle,
+};

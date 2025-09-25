@@ -1,5 +1,4 @@
 // Exercice 8
-
 // Écrivez votre code ici
 let salaireMensuel = 500;
 let loyer = salaireMensuel * 0.3;
@@ -7,7 +6,7 @@ let nourriture = salaireMensuel * 0.2;
 let transport = salaireMensuel * 0.1;
 let autresDepenses = 50;
 autresDepenses += 25;
-let totalDepenses = loyer + transport + autresDepenses + nourriture;
+let totalDepenses = loyer + nourriture + transport + autresDepenses;
 console.log("Votre total dépense est de : " + totalDepenses);
 console.log("Le loyer mensuel est de : " + loyer);
 console.log("Le transport mensuel est de : " + transport);
@@ -42,10 +41,29 @@ loyer = salaireMensuel * 0.3;
 nourriture = salaireMensuel * 0.2;
 transport = salaireMensuel * 0.1;
 autresDepenses = 75;
-totalDepenses = loyer + transport + autresDepenses + nourriture;
+totalDepenses = loyer + nourriture + transport + autresDepenses;
 loisir = salaireMensuel * 0.15;
-totalDepenses += loisir;
+let totalDepensesLoisir = totalDepenses + loisir;
 reste = salaireMensuel - totalDepenses;
 console.log(
   "Après une augmentation de 10% du salaire mensuel, il vous reste : " + reste
 );
+if (totalDepenses > salaireMensuel * 0.9) {
+  console.log("Dépenses trop élevées, réduisez vos charges");
+}
+
+module.exports = {
+  salaireMensuel,
+  loyer,
+  nourriture,
+  transport,
+  autresDepenses,
+  totalDepenses,
+  reste,
+  pourcentageLoyer,
+  pourcentageNourriture,
+  pourcentageTransport,
+  pourcentageAutresDepenses,
+  pourcentageLoisir,
+  loisir,
+};
